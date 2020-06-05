@@ -139,27 +139,42 @@ public class Main extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void pojazdyActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_pojazdyActionPerformed
-           
+            Pojazdy c = new Pojazdy();
+            c.setVisible(true);
+            //przycisk zarządzaj pojazdami
     }//GEN-LAST:event_pojazdyActionPerformed
 
     private void wypozyczActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_wypozyczActionPerformed
-       
+            wypozycz c = new wypozycz();
+            c.setVisible(true);  
+            //przycisk wypożycz pojazd
     }//GEN-LAST:event_wypozyczActionPerformed
 
     private void wyjscieActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_wyjscieActionPerformed
-          
+            int reply = JOptionPane.showConfirmDialog(null, "Czy na pewno chcesz zamknąć aplikacje?", "Zamknąć?",  JOptionPane.YES_NO_OPTION);
+            if (reply == JOptionPane.YES_OPTION)
+            {
+            System.exit(0);
+            }  
+            //przycisk wyjście
     }//GEN-LAST:event_wyjscieActionPerformed
 
     private void klienciActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_klienciActionPerformed
-           
+            klienci c = new klienci();
+            c.setVisible(true);  
+            //przycisk zarządzaj klientami
     }//GEN-LAST:event_klienciActionPerformed
 
     private void zwrocActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_zwrocActionPerformed
-            
+            zwroc c = new zwroc();
+            c.setVisible(true); 
+            //przycisk zwróć pojazd
     }//GEN-LAST:event_zwrocActionPerformed
 
     private void wypozyczoneActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_wypozyczoneActionPerformed
-            
+            wypozyczone c = new wypozyczone();
+            c.setVisible(true);
+            //przycisk zobacz wypożyczone pojazdy
     }//GEN-LAST:event_wypozyczoneActionPerformed
 
     
