@@ -78,7 +78,6 @@ public Pojazdy() {
             }
         });
 
-        dodaj.setBackground(new java.awt.Color(204, 255, 204));
         dodaj.setText("Dodaj");
         dodaj.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -86,8 +85,8 @@ public Pojazdy() {
             }
         });
 
-        edytuj.setBackground(new java.awt.Color(255, 255, 204));
         edytuj.setText("Edytuj");
+        edytuj.setPreferredSize(new java.awt.Dimension(61, 25));
         edytuj.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 edytujActionPerformed(evt);
@@ -101,7 +100,7 @@ public Pojazdy() {
             }
         });
 
-        samochodyTabela.setBackground(new java.awt.Color(255, 102, 102));
+        samochodyTabela.setBackground(new java.awt.Color(231, 231, 231));
         samochodyTabela.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
 
@@ -138,7 +137,6 @@ public Pojazdy() {
             }
         });
 
-        usun.setBackground(new java.awt.Color(255, 153, 153));
         usun.setText("Usuń");
         usun.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -153,40 +151,41 @@ public Pojazdy() {
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(layout.createSequentialGroup()
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(wstecz))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(20, 20, 20)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
-                                .addGap(46, 46, 46)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                    .addComponent(edytuj, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 111, Short.MAX_VALUE)
-                                    .addComponent(dodaj, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(usun, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(20, 20, 20)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(nrRej, javax.swing.GroupLayout.PREFERRED_SIZE, 111, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(numerVin, javax.swing.GroupLayout.PREFERRED_SIZE, 111, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(marka, javax.swing.GroupLayout.PREFERRED_SIZE, 111, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(model, javax.swing.GroupLayout.PREFERRED_SIZE, 111, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(klasa, javax.swing.GroupLayout.PREFERRED_SIZE, 111, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(txtmodel)
-                            .addComponent(txtmarka)
-                            .addComponent(chooseKlasa, 0, 140, Short.MAX_VALUE)
-                            .addComponent(txtnumerVin, javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(txtnrRej, javax.swing.GroupLayout.Alignment.TRAILING))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 45, Short.MAX_VALUE)
-                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 528, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(wstecz)))
+                                    .addComponent(klasa, javax.swing.GroupLayout.PREFERRED_SIZE, 111, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGap(47, 47, 47)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                    .addComponent(txtmodel)
+                                    .addComponent(txtmarka)
+                                    .addComponent(chooseKlasa, 0, 140, Short.MAX_VALUE)
+                                    .addComponent(txtnumerVin, javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addComponent(txtnrRej, javax.swing.GroupLayout.Alignment.TRAILING)))
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(108, 108, 108)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addComponent(edytuj, javax.swing.GroupLayout.PREFERRED_SIZE, 147, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                        .addComponent(dodaj, javax.swing.GroupLayout.DEFAULT_SIZE, 147, Short.MAX_VALUE)
+                                        .addComponent(usun, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 56, Short.MAX_VALUE)
+                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 528, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(20, 20, 20))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap(42, Short.MAX_VALUE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGap(42, 42, 42)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(numerVin, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -207,16 +206,16 @@ public Pojazdy() {
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(klasa)
                             .addComponent(chooseKlasa, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(61, 61, 61)
-                        .addComponent(dodaj)
-                        .addGap(18, 18, 18)
-                        .addComponent(edytuj)
-                        .addGap(18, 18, 18)
-                        .addComponent(usun))
+                        .addGap(51, 51, 51)
+                        .addComponent(dodaj, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(usun, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 386, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
+                .addGap(34, 34, 34)
+                .addComponent(edytuj, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(wstecz)
-                .addContainerGap(12, Short.MAX_VALUE))
+                .addGap(12, 12, 12))
         );
 
         pack();
@@ -363,12 +362,14 @@ public Pojazdy() {
         DefaultTableModel klikniecieMyszka = (DefaultTableModel)samochodyTabela.getModel();
         int selectIndex = samochodyTabela.getSelectedRow();
         
+        
         String numervin = klikniecieMyszka.getValueAt(selectIndex, 0).toString();
         
         txtnumerVin.setText(klikniecieMyszka.getValueAt(selectIndex, 0).toString());
         int dialogResult = JOptionPane.showConfirmDialog(this,"Czy jesteś pewny?","Uwaga",JOptionPane.YES_NO_OPTION);
         if(dialogResult == JOptionPane.YES_OPTION){
             try {
+                
                 Class.forName("org.sqlite.JDBC");
                 conn = DriverManager.getConnection("jdbc:sqlite:src/data/pojazdy.db");
                 
@@ -399,24 +400,35 @@ public Pojazdy() {
     }//GEN-LAST:event_usunActionPerformed
 
     private void edytujActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_edytujActionPerformed
-        // TODO add your handling code here:
+        // edycja pojazdu
+        // NUMER VIN NIE JEST EDYTOWALNY
         DefaultTableModel klikniecieMyszka = (DefaultTableModel)samochodyTabela.getModel();
         int selectIndex = samochodyTabela.getSelectedRow();
         
-        String numervin = klikniecieMyszka.getValueAt(selectIndex, 0).toString();
+        
         
         txtnumerVin.setText(klikniecieMyszka.getValueAt(selectIndex, 0).toString());
         int dialogResult = JOptionPane.showConfirmDialog(this,"Czy jesteś pewny?","Uwaga",JOptionPane.YES_NO_OPTION);
         if(dialogResult == JOptionPane.YES_OPTION){
             try {
+                String numervin = klikniecieMyszka.getValueAt(selectIndex, 0).toString();
+                String nrrej = txtnrRej.getText();
+                String Marka = txtmarka.getText();
+                String Model = txtmodel.getText();
+                String Klasa = chooseKlasa.getSelectedItem().toString();
+                
                 Class.forName("org.sqlite.JDBC");
                 conn = DriverManager.getConnection("jdbc:sqlite:src/data/pojazdy.db");
                 
                 PreparedStatement prepStmt = conn.prepareStatement(
-                      "UPDATE Pojazdy SET NRvin=?, NRrej=?, Marka=?, Model=?, Klasa=? WHERE NRvin =?");
-                prepStmt.setString(1, numervin);
+                      "UPDATE pojazdy SET NRrej=?, Marka=?, Model=?, Klasa=? WHERE NRvin = ?");
+                prepStmt.setString(1, nrrej);
+                prepStmt.setString(2, Marka);
+                prepStmt.setString(3, Model);
+                prepStmt.setString(4, Klasa);
+                prepStmt.setString(5, numervin);
                 prepStmt.executeUpdate();
-                JOptionPane.showMessageDialog(this,"Pojazd usunięty z bazy");
+                JOptionPane.showMessageDialog(this,"Pojazd zaktualizowany");
                 odswiezanieTabeli(); //odświeżenie tabeli po usunięciu pojazdu
                 
                 txtnumerVin.setText(""); //czyszczenie pola txtnumerVin
