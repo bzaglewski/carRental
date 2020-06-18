@@ -1,5 +1,14 @@
-
 package carRental;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+import javax.swing.JOptionPane;
 
 
 public class wypozycz extends javax.swing.JFrame {
@@ -7,6 +16,32 @@ public class wypozycz extends javax.swing.JFrame {
    
     public wypozycz() {
         initComponents();
+	wybierznrPesel();
+    }
+
+    // wybieranie numeru pesel klienta z tabeli klienci 
+     public void wybierznrPesel()
+    {
+        try {
+            Class.forName("org.sqlite.JDBC");
+            conn = DriverManager.getConnection("jdbc:sqlite:src/data/pojazdy.db");
+            PreparedStatement prepStmt = conn.prepareStatement(
+                     "SELECT * FROM klienci");
+            //pokażą się wszystkie numery pesel - zakładamy że jedna osoba może wypożyczyć więcej niż jeden pojazd
+            ResultSet rs = prepStmt.executeQuery();
+            selectnrPesel.removeAllItems();
+            while(rs.next())
+            {
+                selectnrPesel.addItem(rs.getString(1));
+            }
+            
+            
+        } catch (ClassNotFoundException ex) {
+            Logger.getLogger(Pojazdy.class.getName()).log(Level.SEVERE, null, ex);
+        } catch (SQLException ex) {
+            Logger.getLogger(Pojazdy.class.getName()).log(Level.SEVERE, null, ex);
+        }                                        
+    
     }
 
     
