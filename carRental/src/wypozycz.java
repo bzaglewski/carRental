@@ -17,7 +17,10 @@ public class wypozycz extends javax.swing.JFrame {
     public wypozycz() {
         initComponents();
 	wybierznrPesel();
+<<<<<<< Updated upstream
     
+=======
+>>>>>>> Stashed changes
     }
 
     // wybieranie numeru pesel klienta z tabeli klienci 
