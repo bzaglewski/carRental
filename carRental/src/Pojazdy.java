@@ -1,9 +1,6 @@
-
 package carRental;
+
 import static carRental.Pojazdy.pojazdybaza.DB_URL;
-import java.io.*;
-import static java.lang.Class.forName;
-import static java.lang.Compiler.command;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
@@ -21,18 +18,13 @@ public class Pojazdy extends javax.swing.JFrame {
 
     private Connection conn;
     private Statement stat;
-    
-    
 
-    
     
 public Pojazdy() {
         initComponents();
         odswiezanieTabeli();
     }    
 
- 
-   
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
@@ -100,7 +92,6 @@ public Pojazdy() {
             }
         });
 
-        samochodyTabela.setBackground(new java.awt.Color(231, 231, 231));
         samochodyTabela.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
 
@@ -177,8 +168,8 @@ public Pojazdy() {
                                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                                         .addComponent(dodaj, javax.swing.GroupLayout.DEFAULT_SIZE, 147, Short.MAX_VALUE)
                                         .addComponent(usun, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 56, Short.MAX_VALUE)
-                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 528, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 53, Short.MAX_VALUE)
+                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 623, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(20, 20, 20))
         );
         layout.setVerticalGroup(
@@ -274,10 +265,7 @@ public Pojazdy() {
                 }
                 df.addRow(v2);
             }
-            
-            
-            
-            
+       
         } catch (ClassNotFoundException ex) {
             Logger.getLogger(Pojazdy.class.getName()).log(Level.SEVERE, null, ex);
         } catch (SQLException ex) {
@@ -285,8 +273,7 @@ public Pojazdy() {
         }
             
     }
-      
-    
+   
     private void wsteczActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_wsteczActionPerformed
             this.toBack();
             setVisible(false);
@@ -295,19 +282,18 @@ public Pojazdy() {
     }//GEN-LAST:event_wsteczActionPerformed
 
     private void txtmarkaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtmarkaActionPerformed
-        // TODO add your handling code here:
+        
     }//GEN-LAST:event_txtmarkaActionPerformed
 
     private void chooseKlasaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_chooseKlasaActionPerformed
-        // TODO add your handling code here:
+        
     }//GEN-LAST:event_chooseKlasaActionPerformed
 
     private void txtnumerVinActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtnumerVinActionPerformed
-        // TODO add your handling code here:
+        
     }//GEN-LAST:event_txtnumerVinActionPerformed
 
     private void dodajActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_dodajActionPerformed
-         
         // dodawania pojazdu do bazy danych
                 
          String numervin = txtnumerVin.getText();
@@ -353,7 +339,7 @@ public Pojazdy() {
         txtnumerVin.setText(klikniecieMyszka.getValueAt(selectIndex, 0).toString());
         txtnrRej.setText(klikniecieMyszka.getValueAt(selectIndex, 1).toString());
         txtmarka.setText(klikniecieMyszka.getValueAt(selectIndex, 2).toString());
-        txtmodel.setText(klikniecieMyszka.getValueAt(selectIndex, 2).toString());
+        txtmodel.setText(klikniecieMyszka.getValueAt(selectIndex, 3).toString());
         chooseKlasa.setSelectedItem(klikniecieMyszka.getValueAt(selectIndex, 4).toString());
     }//GEN-LAST:event_samochodyTabelaMouseClicked
 
@@ -361,8 +347,7 @@ public Pojazdy() {
       // usuwanie pojazdu z bazy danych
         DefaultTableModel klikniecieMyszka = (DefaultTableModel)samochodyTabela.getModel();
         int selectIndex = samochodyTabela.getSelectedRow();
-        
-        
+
         String numervin = klikniecieMyszka.getValueAt(selectIndex, 0).toString();
         
         txtnumerVin.setText(klikniecieMyszka.getValueAt(selectIndex, 0).toString());
@@ -391,12 +376,9 @@ public Pojazdy() {
             } catch (SQLException ex) {
                 Logger.getLogger(Pojazdy.class.getName()).log(Level.SEVERE, null, ex);
             }
-           
-            
-            
+   
         }
-     
-        
+  
     }//GEN-LAST:event_usunActionPerformed
 
     private void edytujActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_edytujActionPerformed
@@ -404,9 +386,7 @@ public Pojazdy() {
         // NUMER VIN NIE JEST EDYTOWALNY
         DefaultTableModel klikniecieMyszka = (DefaultTableModel)samochodyTabela.getModel();
         int selectIndex = samochodyTabela.getSelectedRow();
-        
-        
-        
+
         txtnumerVin.setText(klikniecieMyszka.getValueAt(selectIndex, 0).toString());
         int dialogResult = JOptionPane.showConfirmDialog(this,"Czy jesteś pewny?","Uwaga",JOptionPane.YES_NO_OPTION);
         if(dialogResult == JOptionPane.YES_OPTION){
@@ -442,22 +422,12 @@ public Pojazdy() {
             } catch (SQLException ex) {
                 Logger.getLogger(Pojazdy.class.getName()).log(Level.SEVERE, null, ex);
             }
-           
-            
-            
+     
         }
-        
-        
-        
-        
-        
-        
-        
+   
     }//GEN-LAST:event_edytujActionPerformed
 
-    /**
-     * @param args the command line arguments
-     */
+
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">

@@ -1,4 +1,3 @@
-
 package carRental;
 
 import java.sql.Connection;
@@ -122,28 +121,31 @@ public class klienci extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addGap(38, 38, 38)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(nazwisko, javax.swing.GroupLayout.PREFERRED_SIZE, 83, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(numerpesel, javax.swing.GroupLayout.PREFERRED_SIZE, 83, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(imie, javax.swing.GroupLayout.PREFERRED_SIZE, 83, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(numertel, javax.swing.GroupLayout.PREFERRED_SIZE, 83, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(51, 51, 51)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(txtNazwisko)
-                            .addComponent(txtNrpesel)
-                            .addComponent(txtImie)
-                            .addComponent(txtNrtel, javax.swing.GroupLayout.DEFAULT_SIZE, 96, Short.MAX_VALUE))
-                        .addGap(26, 26, 26))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addGap(0, 130, Short.MAX_VALUE)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                            .addComponent(jButton3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(dodaj, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(usun, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 95, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(100, 100, 100)))
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(26, 26, 26))
+                            .addGroup(layout.createSequentialGroup()
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(nazwisko, javax.swing.GroupLayout.PREFERRED_SIZE, 83, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(numerpesel, javax.swing.GroupLayout.PREFERRED_SIZE, 83, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(imie, javax.swing.GroupLayout.PREFERRED_SIZE, 83, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGap(75, 75, 75)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(txtNazwisko, javax.swing.GroupLayout.PREFERRED_SIZE, 96, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(txtImie, javax.swing.GroupLayout.PREFERRED_SIZE, 96, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(txtNrpesel, javax.swing.GroupLayout.PREFERRED_SIZE, 96, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(numertel, javax.swing.GroupLayout.PREFERRED_SIZE, 83, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(75, 75, 75)
+                                .addComponent(txtNrtel, javax.swing.GroupLayout.PREFERRED_SIZE, 96, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(119, 119, 119)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 95, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(dodaj, javax.swing.GroupLayout.PREFERRED_SIZE, 95, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(usun, javax.swing.GroupLayout.PREFERRED_SIZE, 95, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 43, Short.MAX_VALUE)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 544, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(24, 24, 24))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(wstecz)
@@ -170,13 +172,13 @@ public class klienci extends javax.swing.JFrame {
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(numertel)
                             .addComponent(txtNrtel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(96, 96, 96)
+                        .addGap(71, 71, 71)
                         .addComponent(dodaj, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
                         .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
                         .addComponent(usun, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(29, 29, 29))
+                        .addGap(54, 54, 54))
                     .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(wstecz)
@@ -267,7 +269,7 @@ public class klienci extends javax.swing.JFrame {
             
     }
     private void txtNrpeselActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtNrpeselActionPerformed
-        // TODO add your handling code here:
+
     }//GEN-LAST:event_txtNrpeselActionPerformed
 
     private void wsteczActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_wsteczActionPerformed
@@ -340,28 +342,16 @@ public class klienci extends javax.swing.JFrame {
                 Logger.getLogger(Pojazdy.class.getName()).log(Level.SEVERE, null, ex);
             } catch (SQLException ex) {
                 Logger.getLogger(Pojazdy.class.getName()).log(Level.SEVERE, null, ex);
-            }
-           
-            
-            
-        }
-        
-        
-        
-        
+            }     
+        }  
     }//GEN-LAST:event_usunActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
         // edycja pojazdu
         // NUMER VIN NIE JEST EDYTOWALNY
-        
-       
-         
         DefaultTableModel klikniecieMyszka = (DefaultTableModel)klienciTabela.getModel();
         int selectIndex = klienciTabela.getSelectedRow();
-        
-        
-        
+   
         txtNrpesel.setText(klikniecieMyszka.getValueAt(selectIndex, 0).toString());
         int dialogResult = JOptionPane.showConfirmDialog(this,"Czy jesteś pewny?","Uwaga",JOptionPane.YES_NO_OPTION);
         if(dialogResult == JOptionPane.YES_OPTION){
@@ -374,7 +364,6 @@ public class klienci extends javax.swing.JFrame {
                 
                 Class.forName("org.sqlite.JDBC");
                 conn = DriverManager.getConnection("jdbc:sqlite:src/data/pojazdy.db");
-                
                 PreparedStatement prepStmt = conn.prepareStatement(
                       "UPDATE klienci SET Nazwisko=?, Imie=?, nrTel=? WHERE nrPesel = ?");
                 prepStmt.setString(1, Nazwisko);
@@ -390,30 +379,16 @@ public class klienci extends javax.swing.JFrame {
                 txtImie.setText("");     //czyszczenie pola txtImie
                 txtNrtel.setText("");    //czyszczenie pola txtNrtel
                 
-               
-                
             } catch (ClassNotFoundException ex) {
                 Logger.getLogger(Pojazdy.class.getName()).log(Level.SEVERE, null, ex);
             } catch (SQLException ex) {
                 Logger.getLogger(Pojazdy.class.getName()).log(Level.SEVERE, null, ex);
             }
-           
-            
-            
-        }
-        
-        
-        
-        
-        
-        
-        
-                                         
+        }                                    
     }//GEN-LAST:event_jButton3ActionPerformed
 
     private void klienciTabelaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_klienciTabelaMouseClicked
-        
-        //wypełnianie pól txt danymi z tabeli po kliknieciu na niego myszką
+         //wypełnianie pól txt danymi z tabeli po kliknieciu na niego myszką
         
         DefaultTableModel klikniecieMyszka = (DefaultTableModel)klienciTabela.getModel();
         int selectIndex = klienciTabela.getSelectedRow();
@@ -421,12 +396,10 @@ public class klienci extends javax.swing.JFrame {
         txtNrpesel.setText(klikniecieMyszka.getValueAt(selectIndex, 0).toString());
         txtNazwisko.setText(klikniecieMyszka.getValueAt(selectIndex, 1).toString());
         txtImie.setText(klikniecieMyszka.getValueAt(selectIndex, 2).toString());
-        txtNrtel.setText(klikniecieMyszka.getValueAt(selectIndex, 2).toString());
+        txtNrtel.setText(klikniecieMyszka.getValueAt(selectIndex, 3).toString());
     }//GEN-LAST:event_klienciTabelaMouseClicked
 
-    /**
-     * @param args the command line arguments
-     */
+   
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">

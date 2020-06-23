@@ -59,7 +59,7 @@ public class Main extends javax.swing.JFrame {
         });
 
         wypozyczone.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
-        wypozyczone.setText("Zobacz wypożyczone pojazdy");
+        wypozyczone.setText("Historia wypożyczeń");
         wypozyczone.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 wypozyczoneActionPerformed(evt);
@@ -91,10 +91,10 @@ public class Main extends javax.swing.JFrame {
                         .addGap(183, 183, 183)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(pojazdy, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(zwroc, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(wypozycz, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(klienci, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(wypozyczone, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                            .addComponent(wypozycz, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(zwroc, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(wypozyczone, javax.swing.GroupLayout.DEFAULT_SIZE, 228, Short.MAX_VALUE)))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(21, 21, 21)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -172,7 +172,7 @@ public class Main extends javax.swing.JFrame {
     }//GEN-LAST:event_zwrocActionPerformed
 
     private void wypozyczoneActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_wypozyczoneActionPerformed
-            wypozyczone c = new wypozyczone();
+            historia c = new historia();
             c.setVisible(true);
             //przycisk zobacz wypożyczone pojazdy
     }//GEN-LAST:event_wypozyczoneActionPerformed
