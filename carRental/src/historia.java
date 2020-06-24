@@ -18,21 +18,12 @@ public class historia extends javax.swing.JFrame {
     private Connection conn;
     private Statement stat;
 
-<<<<<<< HEAD
-=======
-    /**
-     * Creates new form historia
-     */
->>>>>>> 3af35488d512a76cfd701379e01f0649724aa622
     public historia() {
         initComponents();
         odswiezanieTabeli();
     }
 
-<<<<<<< HEAD
    
-=======
->>>>>>> 3af35488d512a76cfd701379e01f0649724aa622
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
@@ -103,7 +94,6 @@ public class historia extends javax.swing.JFrame {
             c = rd.getColumnCount();
             DefaultTableModel df = (DefaultTableModel)historiaTabela.getModel();
             df.setRowCount(0);
-<<<<<<< HEAD
             
             while(Rs.next()){
                 Vector v2 = new Vector();
@@ -177,5 +167,3 @@ public class historia extends javax.swing.JFrame {
     private javax.swing.JScrollPane jScrollPane1;
     // End of variables declaration//GEN-END:variables
 }
-=======
->>>>>>> 3af35488d512a76cfd701379e01f0649724aa622

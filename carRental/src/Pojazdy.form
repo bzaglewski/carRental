@@ -28,47 +28,53 @@
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="1" attributes="0">
+              <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="nrRej" min="-2" pref="111" max="-2" attributes="0"/>
+                  <Component id="numerVin" min="-2" pref="111" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace min="-2" pref="47" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                  <Component id="txtnumerVin" alignment="1" pref="140" max="32767" attributes="0"/>
+                  <Component id="txtnrRej" alignment="1" max="32767" attributes="0"/>
+              </Group>
+              <EmptySpace max="32767" attributes="0"/>
               <Group type="103" groupAlignment="1" attributes="0">
                   <Group type="102" attributes="0">
-                      <EmptySpace max="32767" attributes="0"/>
-                      <Component id="wstecz" min="-2" max="-2" attributes="0"/>
+                      <Component id="marka" min="-2" pref="111" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="84" max="-2" attributes="0"/>
+                      <Component id="txtmarka" min="-2" pref="140" max="-2" attributes="0"/>
                   </Group>
                   <Group type="102" attributes="0">
-                      <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Group type="102" alignment="0" attributes="0">
-                              <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="nrRej" min="-2" pref="111" max="-2" attributes="0"/>
-                                  <Component id="numerVin" min="-2" pref="111" max="-2" attributes="0"/>
-                                  <Component id="marka" alignment="0" min="-2" pref="111" max="-2" attributes="0"/>
-                                  <Component id="model" alignment="0" min="-2" pref="111" max="-2" attributes="0"/>
-                                  <Component id="klasa" alignment="0" min="-2" pref="111" max="-2" attributes="0"/>
-                              </Group>
-                              <EmptySpace min="-2" pref="47" max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                  <Component id="txtmodel" max="32767" attributes="0"/>
-                                  <Component id="txtmarka" max="32767" attributes="0"/>
-                                  <Component id="chooseKlasa" alignment="0" pref="140" max="32767" attributes="0"/>
-                                  <Component id="txtnumerVin" alignment="1" max="32767" attributes="0"/>
-                                  <Component id="txtnrRej" alignment="1" max="32767" attributes="0"/>
-                              </Group>
-                          </Group>
-                          <Group type="102" alignment="0" attributes="0">
-                              <EmptySpace min="-2" pref="108" max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="1" attributes="0">
-                                  <Component id="edytuj" min="-2" pref="147" max="-2" attributes="0"/>
-                                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                      <Component id="dodaj" pref="147" max="32767" attributes="0"/>
-                                      <Component id="usun" max="32767" attributes="0"/>
-                                  </Group>
-                              </Group>
-                          </Group>
+                      <Group type="103" groupAlignment="1" attributes="0">
+                          <Component id="model" min="-2" pref="111" max="-2" attributes="0"/>
+                          <Component id="klasa" min="-2" pref="111" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace pref="53" max="32767" attributes="0"/>
-                      <Component id="jScrollPane1" min="-2" pref="623" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="84" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="1" attributes="0">
+                          <Component id="chooseKlasa" min="-2" pref="140" max="-2" attributes="0"/>
+                          <Component id="txtmodel" min="-2" pref="140" max="-2" attributes="0"/>
+                      </Group>
                   </Group>
               </Group>
-              <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="208" max="-2" attributes="0"/>
+          </Group>
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace min="-2" pref="36" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="1" attributes="0">
+                  <Component id="wstecz" min="-2" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                      <Group type="102" attributes="0">
+                          <Component id="dodaj" min="-2" pref="147" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="175" max="-2" attributes="0"/>
+                          <Component id="edytuj" min="-2" pref="147" max="-2" attributes="0"/>
+                          <EmptySpace max="32767" attributes="0"/>
+                          <Component id="usun" min="-2" pref="147" max="-2" attributes="0"/>
+                      </Group>
+                      <Component id="jScrollPane1" min="-2" pref="797" max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+              <EmptySpace min="0" pref="40" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -76,44 +82,35 @@
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="0" attributes="0">
               <EmptySpace min="-2" pref="42" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                  <Group type="102" attributes="0">
-                      <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="numerVin" alignment="3" min="-2" pref="31" max="-2" attributes="0"/>
-                          <Component id="txtnumerVin" alignment="3" min="-2" max="-2" attributes="0"/>
-                      </Group>
-                      <EmptySpace type="separate" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="nrRej" alignment="3" min="-2" pref="28" max="-2" attributes="0"/>
-                          <Component id="txtnrRej" alignment="3" min="-2" max="-2" attributes="0"/>
-                      </Group>
-                      <EmptySpace type="separate" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="marka" alignment="3" min="-2" pref="26" max="-2" attributes="0"/>
-                          <Component id="txtmarka" alignment="3" min="-2" max="-2" attributes="0"/>
-                      </Group>
-                      <EmptySpace min="-2" pref="22" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="txtmodel" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="model" alignment="3" min="-2" pref="28" max="-2" attributes="0"/>
-                      </Group>
-                      <EmptySpace type="separate" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="klasa" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="chooseKlasa" alignment="3" min="-2" max="-2" attributes="0"/>
-                      </Group>
-                      <EmptySpace min="-2" pref="51" max="-2" attributes="0"/>
-                      <Component id="dodaj" min="-2" pref="47" max="-2" attributes="0"/>
-                      <EmptySpace max="32767" attributes="0"/>
-                      <Component id="usun" min="-2" pref="47" max="-2" attributes="0"/>
-                  </Group>
-                  <Component id="jScrollPane1" min="-2" pref="386" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="numerVin" alignment="3" min="-2" pref="31" max="-2" attributes="0"/>
+                  <Component id="txtnumerVin" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="marka" alignment="3" min="-2" pref="26" max="-2" attributes="0"/>
+                  <Component id="txtmarka" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace min="-2" pref="34" max="-2" attributes="0"/>
-              <Component id="edytuj" min="-2" pref="45" max="-2" attributes="0"/>
-              <EmptySpace max="32767" attributes="0"/>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="nrRej" alignment="3" min="-2" pref="28" max="-2" attributes="0"/>
+                  <Component id="txtnrRej" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="model" alignment="3" min="-2" pref="28" max="-2" attributes="0"/>
+                  <Component id="txtmodel" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="klasa" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="chooseKlasa" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace min="-2" pref="59" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="dodaj" alignment="3" min="-2" pref="47" max="-2" attributes="0"/>
+                  <Component id="edytuj" alignment="3" min="-2" pref="45" max="-2" attributes="0"/>
+                  <Component id="usun" alignment="3" min="-2" pref="47" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
+              <Component id="jScrollPane1" min="-2" pref="386" max="-2" attributes="0"/>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
               <Component id="wstecz" min="-2" max="-2" attributes="0"/>
-              <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>
+              <EmptySpace pref="26" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
